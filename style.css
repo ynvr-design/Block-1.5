@@ -1,6 +1,7 @@
-body {
+.brands-repair {
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
 }
 
 @font-face {
@@ -34,22 +35,27 @@ button {
 }
 
 .header {
+  background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+}
+
+.header__h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Толщина полоски */
+  background-color: #d9fff5; /* Цвет полоски */
+  z-index: 9999;
+}
+
+.header__h1 {
   font-family: "TTLakes-light";
   color: #7e7e82;
   font-size: 16px;
   margin: 16px;
 }
 
-.header::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 1px;
-  background: url(images/line.svg) no-repeat center;
-  background-size: cover;
-}
 .nav-panel {
   display: flex;
   margin-left: 16px;
@@ -181,7 +187,7 @@ li {
     gap: 16px;
   }
 
-  .header {
+  .header__h1 {
     margin-left: 24px;
   }
 
@@ -191,8 +197,8 @@ li {
     font-size: 16px;
     color: #1b1c21;
     cursor: pointer;
-    text-align: center;
-    margin-left: 33px;
+    text-align: left;
+    margin-left: 0px;
     margin-top: 24px;
   }
 
@@ -210,11 +216,20 @@ li {
 @media (min-width: 1120px) {
   .nav-panel-768px {
     max-width: 1120px;
+    margin: 0 auto;
   }
+
   .nav-panel-768px__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 16px;
+  }
+
+  .toggle-button {
+    display: block;
+    text-align: left;
+    margin-top: 24px;
+    margin-left: 0; /* Прижимаем к левому краю */
   }
 
   .hidden .nav__item {
