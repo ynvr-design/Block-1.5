@@ -5,237 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Block 1.5</title>
+    <title>Brand</title>
   </head>
 
-  <div class="brands-repair">
-    <div class="header">
-      <h1 class="header__h1">РЕМОНТ ТЕХНИКИ И РАЗЛИЧНЫХ БРЕНДОВ</h1>
-    </div>
-
-    <nav class="nav-panel">
-      <div class="swiper">
-        <ul class="swiper-wrapper nav-panel__list">
-          <li class="swiper-slide">
-            <a href="#lenovo" class="nav__item">
-              <img src="images/Bitmap.svg" alt="Lenovo" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="#samsung" class="nav__item">
-              <img src="images/samsung.svg" alt="Samsung" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="#apple" class="nav__item">
-              <img src="images/apple.svg" alt="Apple" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="#view" class="nav__item">
-              <img src="images/view.svg" alt="View" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="#bosch" class="nav__item">
-              <img src="images/bosch.svg" alt="Bosch" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="#hp" class="nav__item">
-              <img src="images/hp.svg" alt="Hp" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="#acer" class="nav__item">
-              <img src="images/acer.svg" alt="Acer" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="#sony" class="nav__item">
-              <img src="images/sony.svg" alt="Sony" class="nav__img" />
-              <button class="nav__button">
-                <img src="images/go.svg" />
-              </button>
-            </a>
-          </li>
-        </ul>
-        <div class="swiper-pagination"></div>
+  <body>
+    <section class="brand-block">
+      <div class="top-line"></div>
+      <div class="brand-block__title-wrapper">
+        <h1 class="brand-block__title-text">
+          Ремонт техники различных брендов
+        </h1>
       </div>
-    </nav>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      if (window.innerWidth <= 767) {
-        const swiper = new Swiper(".swiper", {
-          slidesPerView: 1.2,
-          spaceBetween: 16,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      }
-    </script>
-
-    <nav class="nav-panel-768px">
-      <ul class="nav-panel-768px__list">
-        <li>
-          <a href="#lenovo" class="nav__item">
-            <img src="images/Bitmap.svg" alt="Lenovo" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="#samsung" class="nav__item">
-            <img src="images/samsung.svg" alt="Samsung" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="#apple" class="nav__item">
-            <img src="images/apple.svg" alt="Apple" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="#view" class="nav__item">
-            <img src="images/view.svg" alt="View" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="#bosch" class="nav__item">
-            <img src="images/bosch.svg" alt="Bosch" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="#hp" class="nav__item">
-            <img src="images/hp.svg" alt="Hp" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li class="hidden extra-item">
-          <a href="#acer" class="nav__item">
-            <img src="images/acer.svg" alt="Acer" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li class="hidden extra-item">
-          <a href="#sony" class="nav__item">
-            <img src="images/sony.svg" alt="Sony" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li class="extra-item">
-          <a href="#lenovo" class="nav__item">
-            <img src="images/Bitmap.svg" alt="Lenovo" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li class="extra-item">
-          <a href="#samsung" class="nav__item">
-            <img src="images/samsung.svg" alt="Samsung" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-        <li class="extra-item">
-          <a href="#apple" class="nav__item">
-            <img src="images/apple.svg" alt="Apple" class="nav__img" />
-            <button class="nav__button">
-              <img src="images/go.svg" />
-            </button>
-          </a>
-        </li>
-      </ul>
-      <button id="toggle-button" class="toggle-button down">
-        Показать все
-      </button>
-    </nav>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggleButton = document.getElementById("toggle-button");
-        const extraItems = document.querySelectorAll(".extra-item");
-        let isExpanded = false;
-
-        toggleButton.addEventListener("click", function () {
-          isExpanded = !isExpanded;
-
-          extraItems.forEach((item) => {
-            if (
-              window.innerWidth >= 1120 &&
-              item.classList.contains("hidden")
-            ) {
-              return;
-            }
-            item.style.display = isExpanded ? "flex" : "none";
-          });
-
-          toggleButton.textContent = isExpanded ? "Скрыть" : "Показать все";
-
-          if (isExpanded) {
-            toggleButton.classList.add("down");
-            toggleButton.classList.remove("up");
-          } else {
-            toggleButton.classList.remove("down");
-            toggleButton.classList.add("up");
-          }
-        });
-
-        extraItems.forEach((item) => {
-          if (window.innerWidth >= 1120 && item.classList.contains("hidden")) {
-            item.style.display = "flex";
-          } else {
-            item.style.display = "none";
-          }
-        });
-      });
-    </script>
-  </div>
+      <div class="wrapper__swiper-block">
+        <div class="image-slider swiper-container">
+          <ul class="image-slider__wrapper swiper-wrapper" id="element">
+            <li 
+              class="card image-slider__slide swiper-slide swiper-slide-brand"
+            >
+              <div class="image-slider__image">
+                <img src="images/Bitmap.svg" alt="Lenovo" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/samsung.svg" alt="Samsung" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/apple.svg" alt="apple" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/view.svg" alt="ViewSonic" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/bosch.svg" alt="Bosch" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/hp.svg" alt="hp" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/acer.svg" alt="acer" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/sony.svg" alt="sony" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/Bitmap.svg" alt="Lenovo" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/samsung.svg" alt="samsung" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+            <li class="image-slider__slide swiper-slide swiper-slide-brand">
+              <div class="image-slider__image">
+                <img src="images/apple.svg" alt="apple" />
+              </div>
+              <a href="#"><img src="images/go.svg" /></a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="brand-block__show-more">
+          <button
+            id="toggle-button"
+            class="brand-block__show-more-button toggle-button up"
+            type="button"
+          >
+            Показать все
+          </button>
+        </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
